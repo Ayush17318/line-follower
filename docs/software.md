@@ -27,7 +27,7 @@ The project operates on an open-loop control algorithm, where no attribute or va
 
 ### Sensor Task FSM
 <p align="center">
-  ![406034740_1016743952745843_1284910993470777946_n](https://github.com/Ayush17318/line-follower/assets/124316330/8aba5927-d3cb-467c-81cb-a483d2d0164a)
+ <img src="/docs/assets/images/sen_gen_fsm.jpg" />
 
 </p>
 
@@ -64,7 +64,7 @@ This motor task reads integer values from the turn_q_r and turn_q_l queues to in
 
 ### Switch Task FSM
 <p align="center">
-  ![405903779_319239134335880_1500942994180926342_n](https://github.com/Ayush17318/line-follower/assets/124316330/8cc112bc-252b-492d-9e5a-41c96575ae9a)
+  <img src="/docs/assets/images/sw_gen_fsm.jpg" />
 
 </p>
 
