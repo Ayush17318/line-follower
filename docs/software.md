@@ -34,14 +34,12 @@ This task continuously reads the data from each of the six sensor values and cla
 | Straight              | 0  | 0 | 0 | 0 | 0 | 0 |
 |                       |    | 0 | 1 | 1 | 0 |   |
 |                       | 1  | 1 | 1 | 1 | 1 | 1 |
-|                       |    |   |   |   |   |   |
 | Soft Left (1)         |    |   | 1 | 1 |   |   |
 | Left (2)              |    |   | 1 | 0 |   |   |
 | Hard Left (3)         | 1  | 0 | 0 | 0 | 0 | 0 |
 | Harder Left (4)       |    | 1 | 1 | 1 |   |   |
 | Pivot Left (5)        |    | 1 | 1 |   |   |   |
 | Hard Pivot Left (6)   | 1  | 1 | 1 |   |   |   |
-|                       |    |   |   |   |   |   |
 | Soft Right (1)        |    |   | 1 | 1 |   |   |
 | Right (2)             |    |   | 0 | 1 |   |   |
 | Hard Right (3)        | 0  | 0 | 0 | 0 | 0 | 1 |
