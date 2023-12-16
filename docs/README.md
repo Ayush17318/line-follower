@@ -54,10 +54,6 @@ To revise this strategy, further evaluation of the program and code structure to
 
 Additionally, this code functions for the two courses specified. To generalize this code for moving from finish back to start, we would use the IMU heading data from a BNO055 to know how much x and y to travel to return to the start of the robot's path. This can be integrated with the limit switch to travel around any obstacle in this return path. Using an additional limit switch along the side of the robot to track along the wall can also be integrated to generalize the path around the obstacle. Driving the robot until the side limit switch loses contact with the wall before turning three times can allow the robot to traverse any path with any size of the rectangular obstacle. 
 
-talk about these
-(add a closed loop, use bno055 to keep track of the robot's absolute position and be able to find its way back to the start, get more sensors, a more robust obstacle detection algorithm using a time of flight sensor)
-
-
 
 checklist:
 finish readme
