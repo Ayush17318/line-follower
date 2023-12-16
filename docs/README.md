@@ -24,6 +24,7 @@ Romi Robot Fully Wired with Refractance Sensors and Limit Switch:
 ![here](./assets/images/naked_romi.png)
 
 Additionally, to distinguish our robot, a R2D2 inspired shell was designed and 3D printed to create this modified R4D5 robot, as shown below
+
 ![here](./assets/images/r4d5_isometric.png)
 
 ![here](./assets/images/r4d5_front.png)
@@ -31,11 +32,10 @@ Additionally, to distinguish our robot, a R2D2 inspired shell was designed and 3
 ![here](./assets/images/romi_inside_shell.png)
 
 The objective of this robot is to traverse two courses from start to finish and back to the start position by following a line and navigating around an obstacle. The two courses both involve solid, dashed, straight, curved, and crossed lines. 
+
 ![here](./assets/images/track1.png)
 
 ![here](./assets/images/track2.jpg)
-
-Our robot uses an array of 6 reflectance sensors to detect if the robot is over a black or white area. Using analog QTR sensors from Polulu (https://www.pololu.com/product/4246), the robot uses logic to parse through "black" or "white" data from each of the six sensors to determine which direction it should head in. This simple logic resulted in a total of 17 combinations of velocities and headings that the robot is pre-programmed to decide between. See the software page for further details into the logic.
 
 ### Final Results
 This robot is capable of traversing the entire course from start to finish and back to the start box. 
@@ -43,7 +43,6 @@ This robot is capable of traversing the entire course from start to finish and b
 ![Video Link](https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d)
 
 https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d
-
 
 ### Challenges
 
