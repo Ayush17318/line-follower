@@ -37,7 +37,7 @@ The objective of this robot is to traverse two courses from start to finish and 
 
 Our robot uses an array of 6 reflectance sensors to detect if the robot is over a black or white area. Using analog QTR sensors from Polulu (https://www.pololu.com/product/4246), the robot uses logic to parse through "black" or "white" data from each of the six sensors to determine which direction it should head in. This simple logic resulted in a total of 17 combinations of velocities and headings that the robot is pre-programmed to decide between. See the software page for further details into the logic.
 
-Final Results
+### Final Results
 This robot is capable of traversing the entire course from start to finish and back to the start box. 
 
 ![Video Link](https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d)
@@ -45,7 +45,7 @@ This robot is capable of traversing the entire course from start to finish and b
 https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d
 
 
-Challenges
+### Challenges
 
 One of the biggest challenges we had in this project was ensuring that the two motors were running at the same or desired speed. When simply setting the duty cycle of the motors to specific desired speeds, the motors output inconsistent speeds that change based on the amount of voltage from the batteries, friction in the board, drift, and general randomness. To diagnose this, we attempted to implement closed-loop control on the motors using encoder readings. This posed a problem as we realized that there were some fundamental issues with our encoder and velocity readings. This may have been caused by our particular Closed Loop code, encoder code, the integration of this closed loop function with the cotask, or the hardware itself. The motors would often pulsate inconsistently or rotate at a different speed than expected.
 
