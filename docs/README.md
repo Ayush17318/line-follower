@@ -51,7 +51,7 @@ One of the biggest challenges we had in this project was ensuring that the two m
 
 To mitigate this, we used a lot of testing and calibrating to preset certain ratios of duty cycles that corresponded to a particular velocity or heading. This, combined with timing certain durations of certain states, particularly with the obstacle detection sequence, allowed us to bypass this issue. Additionally, having more configurable states of logic between the sensors that allow for combinations of turning and pivoting helped to create a really robust sensor task that can handle these inconsistencies created by lagging motor control.
 
-Further Suggestions
+### Further Suggestions
 
 To revise this strategy, further evaluation of the program and code structure to diagnose the issue with the encoder readings to sufficiently implement Closed Loop control on the encoders and motors. This will allow us to control the speeds such that the ratios between the two wheels will be what we specifically desire. 
 
