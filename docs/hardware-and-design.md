@@ -17,6 +17,8 @@ For the time and scope of the project, only a stripped down model was designed t
 - [Body](/assets/solidworks/r4d5_Body.STL)
 - [Head](/assets/solidworks/r4d5_Head.STL)
 
+![here](./assets/images/assembly-isometric.png)
+
 The full list of cad files can be found [here](/assets/solidworks).
 
 #### [Home](./README.md) 
