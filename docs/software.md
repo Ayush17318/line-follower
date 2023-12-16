@@ -32,27 +32,26 @@ The project operates on an open-loop control algorithm, where no attribute or va
 
 This task continuously reads the data from each of the six sensor values and classifies these into many different logic states. Most of this classification occurs in State 0 and then, the task sends the command to the motor tasks using a right and left motor queue. The sensor logic is outlined in the following table, where 0 means the sensor is reading white under it and 1 means the sensor is reading black under it:
 
+| Logic State           | 11 | 9 | 7 | 5 | 3 | 1 |
+|-----------------------|----|---|---|---|---|---|
+| Straight              | 0  | 0 | 0 | 0 | 0 | 0 |
+|                       |    | 0 | 1 | 1 | 0 |   |
+|                       | 1  | 1 | 1 | 1 | 1 | 1 |
+|-----------------------|----|---|---|---|---|---|
+| Soft Left (1)         |    |   | 1 | 1 |   |   |
+| Left (2)              |    |   | 1 | 0 |   |   |
+| Hard Left (3)         | 1  | 0 | 0 | 0 | 0 | 0 |
+| Harder Left (4)       |    | 1 | 1 | 1 |   |   |
+| Pivot Left (5)        |    | 1 | 1 |   |   |   |
+| Hard Pivot Left (6)   | 1  | 1 | 1 |   |   |   |
+|-----------------------|----|---|---|---|---|---|
+| Soft Right (1)        |    |   | 1 | 1 |   |   |
+| Right (2)             |    |   | 0 | 1 |   |   |
+| Hard Right (3)        | 0  | 0 | 0 | 0 | 0 | 1 |
+| Harder Right (4)      |    |   | 1 | 1 | 1 |   |
+| Pivot Right (5)       |    |   |   | 1 | 1 |   |
+| Hard Pivot Right  (6) |    |   |   | 1 | 1 | 1 |
 
-
-|   Logic State         | 11 | 9 | 7 | 5 | 3 | 1 |  |
-|-----------------------|----|---|---|---|---|---|--|
-| Straight              | 0  | 0 | 0 | 0 | 0 | 0 |  |
-|                       |    | 0 | 1 | 1 | 0 |   |  |
-|                       | 1  | 1 | 1 | 1 | 1 | 1 |  |
-|                       |    |   |   |   |   |   |  |
-| Soft Left (1)         |    |   | 1 | 1 |   |   |  |
-| Left (2)              |    |   | 1 | 0 |   |   |  |
-| Hard Left (3)         | 1  | 0 | 0 | 0 | 0 | 0 |  |
-| Harder Left (4)       |    | 1 | 1 | 1 |   |   |  |
-| Pivot Left (5)        |    | 1 | 1 |   |   |   |  |
-| Hard Pivot Left (6)   | 1  | 1 | 1 |   |   |   |  |
-|                       |    |   |   |   |   |   |  |
-| Soft Right (1)        |    |   | 1 | 1 |   |   |  |
-| Right (2)             |    |   | 0 | 1 |   |   |  |
-| Hard Right (3)        | 0  | 0 | 0 | 0 | 0 | 1 |  |
-| Harder Right (4)      |    |   | 1 | 1 | 1 |   |  |
-| Pivot Right (5)       |    |   |   | 1 | 1 |   |  |
-| Hard Pivot Right  (6) |    |   |   | 1 | 1 | 1 |  |
 
 
 ### Motor Task FSM
