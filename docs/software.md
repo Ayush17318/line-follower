@@ -30,7 +30,9 @@ The project operates on an open-loop control algorithm, where no attribute or va
   <img src="/docs/assets/images/sen_gen_fsm.jpg" />
 </p>
 
-(talk about it)
+This task continuously reads the data from each of the six sensor values and classifies these into many different logic states. Most of this classification occurs in State 0 and then, the task sends the command to the motor tasks using a right and left motor queue. The sensor logic is outlined in the following table, where 0 means the sensor is reading white under it and 1 means the sensor is reading black under it:
+
+
 ### Motor Task FSM
 <p align="center">
   <img src="/docs/assets/images/mot_gen_fsm.JPG" />
