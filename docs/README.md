@@ -3,16 +3,16 @@
 
 Click [here](https://Ayush17318.github.io/line-follower/) for the website version.
 
-This is the summarized documentation for the R4D5 robot and will discuss the process, logic, and tools used. The project was completed in a span of 5 weeks and has the following functions to execute:
+This is the summarized documentation for the R4D5 robot and will discuss the process, logic, and tools used. The project was completed in 5 weeks and has the following functions to execute:
 - Linear line tracking
-- Turn various sized curves
+- Turn various-sized curves
 - Not be affected by line breaks
 - Not be affected by intersections
 - Avoid obstacles
 - Stop in an end-zone
 - Find its way back to the start-zone
   
-The goal of the project was for the robot to navigate any track with the above stated elements arranged in a randomized order with sufficient speed and reliability.
+The goal of the project was for the robot to navigate any track with the above-stated elements arranged in a randomized order with sufficient speed and reliability.
 
 The following links will discuss the hardware, electronics, software, and analysis involved with building the robot pictured below.
 - [Hardware & Design](hardware-and-design.md)
@@ -20,9 +20,10 @@ The following links will discuss the hardware, electronics, software, and analys
 - [Software](software.md)
 - [Analysis](analysis.md)
 
-put in naked romi and r4d5 romi photos
+Romi Robot Fully Wired with Refractance Sensors and Limit Switch:
 ![here](./assets/images/naked_romi.png)
 
+Additionally, to distinguish our robot, a R2D2 inspired shell was designed and 3D printed to create this modified R4D5 robot, as shown below
 ![here](./assets/images/r4d5_isometric.png)
 
 ![here](./assets/images/r4d5_front.png)
@@ -34,9 +35,10 @@ The objective of this robot is to traverse two courses from start to finish and 
 
 ![here](./assets/images/track2.jpg)
 
-Our robot uses an array of 6 reflectance sensors to detect if the robot is over a black or white area. Using analog QTR sensors from Polulu (https://www.pololu.com/product/4246), the robot uses logic to parse through "black" or "white" data from each of the six sensors to determine which direction it should head in. This simple logic resulted in a total of 17 combinations of velocities and headings that the robot is pre-programmed to decide between.
+Our robot uses an array of 6 reflectance sensors to detect if the robot is over a black or white area. Using analog QTR sensors from Polulu (https://www.pololu.com/product/4246), the robot uses logic to parse through "black" or "white" data from each of the six sensors to determine which direction it should head in. This simple logic resulted in a total of 17 combinations of velocities and headings that the robot is pre-programmed to decide between. See the software page for further details into the logic.
 
-Final results
+Final Results
+This robot is capable of traversing the entire course from start to finish and back to the start box. 
 
 ![Video Link](https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d)
 
