@@ -6,7 +6,6 @@ The software serves as the intelligence center of the project, employing a modul
 ## Task Management
 
 The priority multi-tasking functionality is facilitated by two essential files: cotask.py and taskshare.py, provided by Dr. JR Ridgely. The task diagram below visually represents the architecture of the software.
-![here](./assets/images/task_diagram.JPG)
 
 <p align="center">
   <img src="/docs/assets/images/task_diagram.JPG" />
