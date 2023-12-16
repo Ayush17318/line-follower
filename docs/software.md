@@ -27,7 +27,8 @@ The project operates on an open-loop control algorithm, where no attribute or va
 
 ### Sensor Task FSM
 <p align="center">
-  <img src="/docs/assets/images/sen_gen_fsm.jpg" />
+  ![406034740_1016743952745843_1284910993470777946_n](https://github.com/Ayush17318/line-follower/assets/124316330/8aba5927-d3cb-467c-81cb-a483d2d0164a)
+
 </p>
 
 This task continuously reads the data from each of the six sensor values and classifies these into many different logic states. Most of this classification occurs in State 0 and then, the task sends the command to the motor tasks using a right and left motor queue. The sensor logic is outlined in the following table, where 0 means the sensor is reading white under it and 1 means the sensor is reading black under it:
@@ -63,7 +64,8 @@ This motor task reads integer values from the turn_q_r and turn_q_l queues to in
 
 ### Switch Task FSM
 <p align="center">
-  <img src="/docs/assets/images/sw_gen_fsm.jpg" />
+  ![405903779_319239134335880_1500942994180926342_n](https://github.com/Ayush17318/line-follower/assets/124316330/8cc112bc-252b-492d-9e5a-41c96575ae9a)
+
 </p>
 
 This simple task continuously checks to see if the limit switch was triggered. Once triggered, it moves into states 1 and 2, where the limit switches are disabled for the remainder of the robot's run
