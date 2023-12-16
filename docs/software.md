@@ -1,4 +1,4 @@
-![image](https://github.com/Ayush17318/line-follower/assets/124316330/1a1de33d-80d4-4c9f-8c29-65626894eebb)# Software
+Software
 ## Modular Code Structure
 
 The software serves as the intelligence center of the project, employing a modular design approach. Each class and task are meticulously organized into individual files. The main code, responsible for orchestrating the entire system, instantiates these classes and initiates the scheduler.
@@ -37,14 +37,14 @@ This task continuously reads the data from each of the six sensor values and cla
 | Straight              | 0  | 0 | 0 | 0 | 0 | 0 |
 |                       |    | 0 | 1 | 1 | 0 |   |
 |                       | 1  | 1 | 1 | 1 | 1 | 1 |
-|-----------------------|----|---|---|---|---|---|
+|                       |    |   |   |   |   |   |
 | Soft Left (1)         |    |   | 1 | 1 |   |   |
 | Left (2)              |    |   | 1 | 0 |   |   |
 | Hard Left (3)         | 1  | 0 | 0 | 0 | 0 | 0 |
 | Harder Left (4)       |    | 1 | 1 | 1 |   |   |
 | Pivot Left (5)        |    | 1 | 1 |   |   |   |
 | Hard Pivot Left (6)   | 1  | 1 | 1 |   |   |   |
-|-----------------------|----|---|---|---|---|---|
+|                       |    |   |   |   |   |   |
 | Soft Right (1)        |    |   | 1 | 1 |   |   |
 | Right (2)             |    |   | 0 | 1 |   |   |
 | Hard Right (3)        | 0  | 0 | 0 | 0 | 0 | 1 |
@@ -66,7 +66,7 @@ This motor task reads integer values from the turn_q_r and turn_q_l queues to in
   <img src="/docs/assets/images/sw_gen_fsm.jpg" />
 </p>
 
-(talk about it)
+This simple task continuously checks to see if the limit switch was triggered. Once triggered, it moves into states 1 and 2, where the limit switches are disabled for the remainder of the robot's run
 
 ## Code Documentation
 Comprehensive Doxygen comments have been provided in the codebase for each Python file. The detailed documentation is accessible [here](https://ayush17318.github.io/Term-Project/).
