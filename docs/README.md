@@ -44,9 +44,13 @@ https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-
 
 Challenges
 
-(talk about the period causing motors to pulsate and not reach the desired duty cycle, closed loop)
-challenges challenges challenges
-suggestions
+One of the biggest challenges we had in this project was ensuring that the two motors were running at the same or desired speed. When simply setting the duty cycle of the motors to specific desired speeds, the motors output inconsistent speeds that change based on the amount of voltage from the batteries, friction in the board, drift, and general randomness. To diagnose this, we attempted to implement closed-loop control on the motors using encoder readings. This posed a problem as we realized that there were some fundamental issues with our encoder and velocity readings. This may have been caused by our particular Closed Loop code, encoder code, the integration of this closed loop function with the cotask, or the hardware itself. The motors would often pulsate inconsistently or rotate at a different speed than expected.
+
+To mitigate this, we used a lot of testing and calibrating to preset certain ratios of duty cycles that corresponded to a particular velocity or heading. This, combined with timing certain durations of certain states, particularly with the obstacle detection sequence, allowed us to bypass this issue.
+
+To revise this strategy, further evaluation of the program and code structure to diagnose the issue with the encoder readings to sufficiently implement Closed Loop control on the encoders and motors. This will allow us to control the speeds such that the ratios between the two wheels will be what we specifically desire. 
+
+Additionally, this code functions for the two courses specified. To generalize this code for moving from finish back to start, using IMU heading data from a BNO055 to know how much x and y to travel to return to the start of the robot's path. 
 
 talk about these
 (add closed loop, use bno055 to keep track of robots absolute position and be able to find its way back to the start, get more sensors, a more robust obstacle detection algorithm using a time of flight sensor)
