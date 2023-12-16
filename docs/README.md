@@ -20,7 +20,8 @@ The following links will discuss the hardware, electronics, software, and analys
 - [Software](software.md)
 - [Analysis](analysis.md)
 
-Romi Robot Fully Wired with Refractance Sensors and Limit Switch:
+The full wired romi with refractance sensors and limit switch is pictured below
+
 ![here](./assets/images/naked_romi.png)
 
 Additionally, to distinguish our robot, a R2D2 inspired shell was designed and 3D printed to create this modified R4D5 robot, as shown below
