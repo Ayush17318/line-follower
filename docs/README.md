@@ -45,7 +45,7 @@ https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-
 Challenges
 
 (talk about the period causing motors to pulsate and not reach the desired duty cycle, closed loop)
-
+challenges challenges challenges
 suggestions
 
 talk about these
