@@ -49,7 +49,7 @@ This task continuously reads the data from each of the six sensor values and cla
 
 ### Motor Task FSM
 
-![here](./assets/images/mot_gen_fsm.jpg)
+![here](./assets/images/mot_gen_fsm.JPG)
 
 This motor task reads integer values from the turn_q_r and turn_q_l queues to inform the right and left motors what the sensor is reading respectively. The integer from the queues is the corresponding state the motor task generator moves into. All states immediately return to the main hub state after one passthrough except for state 15, which involves the obstacle detection path. This task remains in this state for the total duration of the robot going around the obstacle, which involves backing up, turning, driving forward, turning, driving forward, and completing a large arc until the robot meets up with the line on the other side of the wall. During this task, the motor task sends a signal to the sensors in sensors_q to "turn off", or to skip collecting data and filling up the sensor queue while the robot is following the pre-programmed path. 
 
