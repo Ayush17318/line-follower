@@ -40,9 +40,13 @@ The objective of this robot is to traverse two courses from start to finish and 
 ### Final Results
 This robot is capable of traversing the entire course from start to finish and back to the start box. 
 
-![Video Link](https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d)
+![Track1 Run Link](https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d)
 
 https://github.com/Ayush17318/line-follower/assets/124316330/a02ead4f-ce9b-40d5-a018-f97797cce66d
+
+![Track2 Run Link](https://github.com/Ayush17318/line-follower/assets/124316330/22bd7452-9fae-4b3b-8494-a8b8b8b573b5)
+
+https://github.com/Ayush17318/line-follower/assets/124316330/22bd7452-9fae-4b3b-8494-a8b8b8b573b5
 
 ### Challenges
 
