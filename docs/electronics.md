@@ -19,6 +19,7 @@ The following links are useful to learn about the Nucleo and identify the releva
 - [Graphic Pinout Diagram](https://os.mbed.com/platforms/ST-Nucleo-L476RG/)
 - [Basic User Manual](https://www.st.com/resource/en/user_manual/dm00105823-stm32-nucleo-64-boards-mb1136-stmicroelectronics.pdf)
 - [Detailed Datasheet](https://www.st.com/resource/en/datasheet/stm32f205rb.pdf)
+  
 ### 5. Shoe of Brian
 The [shoe of brian](/assets/solidworks/ShoeOfBrian03E.step) is a board custom designed by Dr. JR Ridgely that interfaces with the STM32 and translates micropython code to C which can be read by the STM32.
 
@@ -31,7 +32,7 @@ This is of 6 channels with 8 mm spaced emitters with analog output from pololu. 
 ### 7. Switch
 Two [switches](https://www.pololu.com/product/1528)/bump sensors are mounted at the front of the robot in order to detect any obstacles.
 ### 8. Inertial Measurement Unit (IMU)
-A BNO055 IMU is mounted at the front part of the chassis. Its capable of nine degrees of freedom via an accelerometer, a gyroscope, and a magnetometer. It is used to track the position of the robot in order to avoid obstacles and retrace the track.
+A BNO055 IMU is mounted at the front part of the chassis. Its capable of nine degrees of freedom via an accelerometer, a gyroscope, and a magnetometer. It is used to track the position of the robot in order to avoid obstacles and retrace the track. A full manufacturer datasheet can be found on this [link](https://cdn-shop.adafruit.com/datasheets/BST_BNO055_DS000_12.pdf).
 ### 9. Batteries
 The robot is powered by six AA rechargeable batteries which can run approximately 5 hours on a single charge.
 ### 10. Pin Connections
