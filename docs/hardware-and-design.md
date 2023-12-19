@@ -1,7 +1,7 @@
 # Hardware & Design
 
 ### Romi
-The base of the robot is the romi kit, the details of which can be found at [Romi](https://www.pololu.com/category/202/romi-chassis-and-accessories).
+The base of the robot is the romi kit, the details of which can be found on [Pololu](https://www.pololu.com/category/202/romi-chassis-and-accessories).
 
 For a better 3D view with accurate geometry and dimensions, the solidworks of the kit assembly was utilized:
 
@@ -19,6 +19,6 @@ For the time and scope of the project, only a stripped down model was designed t
 
 ![here](./assets/images/assembly-isometric.png)
 
-The full list of cad files can be found [here](/assets/solidworks).
+The full list of cad files can be found via this [link](/assets/solidworks).
 
 #### [Home](./README.md) 
